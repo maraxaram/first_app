@@ -1,0 +1,2 @@
+module QmasksHelper
+end

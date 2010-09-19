@@ -1,0 +1,23 @@
+<h1>Listing qmasks</h1>
+
+<table>
+  <tr>
+    <th>Input</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @qmasks.each do |qmask| %>
+  <tr>
+    <td><%= qmask.input %></td>
+    <td><%= link_to 'Show', qmask %></td>
+    <td><%= link_to 'Edit', edit_qmask_path(qmask) %></td>
+    <td><%= link_to 'Destroy', qmask, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Qmask', new_qmask_path %>
